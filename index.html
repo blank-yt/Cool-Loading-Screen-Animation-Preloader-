@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Loading animation</title>
+    <link rel="stylesheet" href="styles.css" />
+		<script>
+			function hideLoading() {
+				document.getElementById('loading').style.opacity = '0';
+				document.getElementById('loading').style.zIndex = '-1';
+			}
+		</script>
+	</head>
+	<body onload="hideLoading();">
+    <div id="loading">
+      <div class="spinner-box">
+        <div class="pulse-container">
+          <div class="pulse-bubble pulse-bubble-1"></div>
+          <div class="pulse-bubble pulse-bubble-2"></div>
+          <div class="pulse-bubble pulse-bubble-3"></div>
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      <h3 style="padding: 20px; color: #fff">I am loaded!</h3>
+			<img style="display:none" src="https://i.pinimg.com/originals/3b/8a/d2/3b8ad2c7b1be2caf24321c852103598a.jpg" />
+			<img style="display:none" src="https://resi.ze-robot.com/dl/ul/ultraviolet-4k-wallpaper-3440%C3%971440.jpg" />
+			<img style="display:none" src="https://www.pxwall.com/wp-content/uploads/2018/08/highway-animated-wallpaper-4k-3840x2160.jpg" />
+    </div>
+	</body>
+</html>
